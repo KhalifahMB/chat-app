@@ -9,10 +9,8 @@
     <title>Real-time Chat App</title>
   </head>
   <body>
-    <!-- <div class="btns">
-      <div class="open-btn">&#9776;</div>
-      <div class="close-btn">&#10006;</div>
-    </div> -->
+    <button onclick="" class="btn" id="open-btn">&#9776;</button>
+    <button onclick="" class="btn" id="close-btn">&#10006;</button>
     <div class="chat-app">
       <div class="sidebar">
         <h2>Users</h2>
@@ -59,6 +57,7 @@
               <div class="details">
                 <h3>Chulo</h3>
                 <p>Hello there!.</p>
+                <span>2 seconds ago</span>
               </div>
             </div>
           </div>
@@ -67,6 +66,7 @@
               <div class="details">
                 <h3>Dr-MD</h3>
                 <p>Hi! How can I help you?.</p>
+                <span>2 seconds ago</span>
               </div>
               <img class="image" src="image.png" alt="" sizes="" srcset="" />
             </div>
@@ -87,6 +87,21 @@
       </div>
     </div>
     <!-- <script type="module" src="script.js"></script> -->
+    <script>
+      const openbtn = document.querySelector("#open-btn");
+      const closebtn = document.querySelector("#close-btn");
+      const sidebar = document.querySelector(".sidebar");
+
+      const openSidebar = () => {
+        console.log("open side bar");
+        sidebar.style.display = "block";
+      };
+      openbtn.addEventListener("click", () => {
+        console.log("clicked");
+      });
+      console.log(sidebar.style);
+      // openSidebar();s
+    </script>
     <script type="module" src="scripts.js"></script>
   </body>
 </html>
