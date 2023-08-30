@@ -1,0 +1,92 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Real-time Chat App</title>
+  </head>
+  <body>
+    <!-- <div class="btns">
+      <div class="open">&#9776;</div>
+      <div class="close">&#10006;</div>
+    </div> -->
+    <div class="chat-app">
+      <div class="sidebar">
+        <h2>Users</h2>
+        <ul class="user-list">
+          <li class="user active" id="user1" value="1">
+            <span class="status"></span>
+            <img
+              src="image.png"
+              width="50px"
+              height="50px"
+              style="border-radius: 50%; margin-right: 5px"
+              alt=""
+              srcset=""
+            />
+            Boss Chulo
+          </li>
+          <li class="user" id="user2" value="2">
+            <span class="status"></span>
+            <img
+              src="image.png"
+              width="50px"
+              height="50px"
+              style="border-radius: 50%; margin-right: 5px"
+              alt=""
+              srcset=""
+            />
+            Dr-MD
+          </li>
+          <!-- Add more users here -->
+        </ul>
+        <!-- <div class="auth-links">
+          <a href="registration.html">Register</a>
+          <a href="login.html">Login</a>
+        </div> -->
+      </div>
+      <div class="chat-container">
+        <div class="chat-header">
+          <h1>Real-time Chat App</h1>
+        </div>
+        <div class="chat-messages">
+          <div class="message incoming">
+            <div class="message-content">
+              <img class="image" src="image.png" alt="" sizes="" srcset="" />
+              <div class="details">
+                <h3>Chulo</h3>
+                <p>Hello there!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="message outgoing">
+            <div class="message-content">
+              <div class="details">
+                <h3>Dr-MD</h3>
+                <p>Hi! How can I help you?.</p>
+              </div>
+              <img class="image" src="image.png" alt="" sizes="" srcset="" />
+            </div>
+          </div>
+          <!-- More messages will be added here -->
+        </div>
+        <div class="chat-input">
+          <div class="input">
+            <input
+              type="text"
+              id="message-input"
+              placeholder="Type your message..."
+            />
+            <span style="cursor: pointer">&#128247;</span>
+          </div>
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="module" src="script.js"></script> -->
+    <script type="module" src="scripts.js"></script>
+  </body>
+</html>
