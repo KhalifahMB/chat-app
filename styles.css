@@ -6,19 +6,11 @@
   margin: 0;
 }
 
-.btns {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.btn {
+  display: none;
   cursor: pointer;
 }
 
-.open,
-.close {
-  display: none;
-  font-size: 40px;
-  cursor: pointer;
-}
 /* Basic styling for the chat app */
 .chat-app {
   padding: 0.5px;
@@ -204,8 +196,16 @@
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-  .open {
-    display: block;
+  .btn {
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .btn#close-btn {
+    display: nonee;
   }
   .chat-app {
     flex-direction: column; /* Stack elements on small screens */
